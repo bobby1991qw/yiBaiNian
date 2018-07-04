@@ -1,0 +1,55 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/base.less';
+body {
+    margin: 0;
+}
+section {
+    padding-top:120px;
+    height: 100vh;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    background: #fff;
+    .hd {
+        height: 140px;
+        display:flex;
+        justify-content: space-between;
+        h2,
+        h5 {
+            margin: 0;
+        }
+        > .box-fl {
+            color:#68a9b8;
+            > h2 {
+                padding-top: 40px;
+                font-size: 36px;
+            }
+            > h5 {
+                font-size: 18px;
+                padding-top:15px;
+            }
+        }
+        > .box-fr {
+            color:#6fa083;
+            > h2 {
+                padding-top: 30px;
+                font-size: 48px;
+            }
+            > h5 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+#map {
+    width: 100%;
+    background: #eff0eb;
+    flex: 1;
+    iframe {
+        display: block;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,86 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/icons.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+section {
+    .text {
+        display: flex;
+        justify-content: center;
+        min-width: 1200px;
+        .item-fl,
+        .item-fr {
+            background:#6fa083;
+            padding:50px;
+            box-sizing: border-box;
+        }
+        .item-fl {
+            position: relative;
+            width: 50vw;
+            padding-top:150px;
+            &::before {
+                position: absolute;
+                right:-30px;
+                bottom: 50%;
+                content: '';
+                width:0; 
+                height:0; 
+                border-top:20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 30px solid #6fa083;
+            }
+            > h4,
+            > h5 {
+                color:#fff;
+                margin:0;
+            }
+            > h4 {
+                font-size: 48px;
+                position: relative;
+                padding-bottom: 30px;
+                &::before {
+                    position: absolute;
+                    bottom:0;
+                    right:0;
+                    content: ' ';
+                    width: 320px;
+                    height: 2px;
+                    background:#fff;
+                }
+            }
+            > h5 {
+                padding-top: 25px;
+                font-size: 40px;
+            }
+            .circular {
+                display: flex;
+                padding-top:90px;
+                justify-content: flex-end;
+                span {
+                    width: 120px;
+                    height: 120px;
+                    background:#fff;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height:120px;
+                    margin-left:20px;
+                    font-size:36px;
+                    color:#6fa083;
+                }
+            }
+        }
+        .item-fr {
+            width: 50vw;
+            background:#fff;
+            padding-left: 100px;
+            > p {
+                width: 590px;
+                text-indent: 2em;
+                line-height:36px;
+                font-size:24px;
+                color:#6fa083;
+            }
+        }
+    }
+}

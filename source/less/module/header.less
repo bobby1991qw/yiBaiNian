@@ -1,0 +1,51 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 90px;
+    padding: 15px 0;
+    background: rgba(239, 240, 235, .8);
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+    >a,
+    div {
+        padding: 0 20px;
+        width: 110px;
+        text-decoration: none;
+        height: 30px;
+        overflow: hidden;
+        transition: all .3s;
+        color: #333;
+        &.logo {
+            height: auto;
+            overflow: visible;
+        }
+        &.active,
+        &:hover {
+            color: #6fa083;
+        }
+    }
+    >div {
+        a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+        &:hover {
+            overflow: visible;
+            a {
+                background: #fff;
+                color: #6fa083;
+                &:hover {
+                    color: #b1d499;
+                }
+            }
+        }
+    }
+}

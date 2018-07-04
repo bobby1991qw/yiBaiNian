@@ -1,0 +1,35 @@
+
+.width-box {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration:none
+}
+.text-right {
+    text-align: right;
+}
+
+.banner {
+    padding-top: 120px;
+    position: relative;
+    background: #eff0eb url(../image/index-b1-bg.png) no-repeat bottom center;
+    box-sizing: border-box;
+    height: 100vh;
+    @keyframes ani_index_content {
+        form {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(-30deg)
+        }
+    }
+    .content {
+        position: absolute;
+        right: 100%;
+        top: 180px;
+        transform-origin: 55px 50px;
+        animation: ani_index_content 1s infinite alternate;
+    }
+}
