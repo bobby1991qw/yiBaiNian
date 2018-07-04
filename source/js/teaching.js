@@ -1,3 +1,4 @@
+import './module/header';
 import './module/Dvideo';
 
 var videoWrap = document.getElementById('testVideo')
