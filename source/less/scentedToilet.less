@@ -1,0 +1,72 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+section {
+    padding-top: 120px;
+    .scentedToilet-banner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        .img-wrap {
+            width: 850px;
+            height: 565px;
+        }
+        .text {
+            width: 310px;
+            h5 {
+                height: 75px;
+                line-height: 75px;
+                text-align: center;
+                font-size: 30px;
+                color: #86c0cc;
+                margin: 0;
+                font-weight: normal;
+            }
+            p {
+                padding: 20px;
+                box-sizing: border-box;
+                font-size: 24px;
+                color: #b2b2b2;
+                line-height: 36px;
+                border-top:1px solid #86c0cc;
+                border-bottom:1px solid #86c0cc;
+            }
+        }
+    }
+    .img-wrap {
+        position:relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all .5s ease;
+        }
+        p {
+            position:absolute;
+            left:0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .5);
+            padding-left: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            font-size: 18px;
+            color: #fff;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+}
