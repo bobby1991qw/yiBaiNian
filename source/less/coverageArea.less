@@ -1,0 +1,45 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/icons.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+.title-group{
+    text-align: center;
+}
+
+.title-group .title {
+    margin: 56px auto 15px;
+}
+
+.title-group .sub-title {
+    position: relative;
+    display: inline-block;
+}
+
+.title-group .sub-title::before,
+.title-group .sub-title::after {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    top: 50%;
+    background: #333;
+}
+
+.title-group .sub-title::before {
+    margin-left: -20px;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.title-group .sub-title::after {
+    margin-right: -20px;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.map-content .coverage-img-block {
+    margin: 122px auto 100px;
+    text-align: center;
+}
