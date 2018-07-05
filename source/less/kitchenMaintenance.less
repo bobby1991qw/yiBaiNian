@@ -1,0 +1,66 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+section {
+    padding-top: 120px;
+    .text-hd {
+        padding-bottom: 25px;
+        p {
+            font-size:14px;
+            color:#b2b2b2;
+            line-height: 20px;
+            padding-bottom: 25px;
+        }
+    }
+    .box-hd {
+        height: 120px;
+        width: 100%;
+        background: url(../image/watermark.png) no-repeat center right;
+        display:flex;
+        justify-content: space-between;
+        &.active {
+            background: url(../image/watermark.png) no-repeat center left;
+        }
+        .title {
+            width: 50%;
+            height: 100%;
+            line-height: 120px;
+            font-size: 48px;
+            color: #666;
+        }
+        .dyeing {
+            width: 530px;
+            height: 100%;
+            text-align: center;
+            font-size:36px;
+            color:#fff;
+            line-height: 120px;
+        }
+        .bg1 {
+            background: #86c0cc;
+        }
+        .bg2 {
+            background: #6fa083;
+        }
+    }
+    .con {
+        padding: 45px 0;
+        display:flex;
+        justify-content: space-between;
+        .text {
+            width: 570px;
+            padding-right: 45px;
+            &.right {
+                padding-left: 45px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                color:#b2b2b2;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
