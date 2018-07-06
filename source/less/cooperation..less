@@ -1,0 +1,181 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/icons.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+body {
+    background: #68a9b8;
+}
+
+.title-group {
+    text-align: center;
+    color: #fff;
+}
+
+.title-group .title {
+    margin: 56px auto 15px;
+}
+
+.title-group .sub-title {
+    position: relative;
+    display: inline-block;
+}
+
+.title-group .sub-title::before,
+.title-group .sub-title::after {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    top: 50%;
+    background: #fff;
+}
+
+.title-group .sub-title::before {
+    margin-left: -20px;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.title-group .sub-title::after {
+    margin-right: -20px;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.cooperation-condition {
+    position: relative;
+    width: 1186px;
+    margin: 80px auto 0;
+    background: #b1d499;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.cooperation-condition::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 130px;
+    background: #68a9b8;
+}
+
+.cooperation-condition h1 {
+    width: 550px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.cooperation-condition .desc {
+    width: 550px;
+    line-height: 2;
+}
+
+.join-us-img {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    z-index: 9;
+}
+
+.blank {
+    position: relative;
+    background: #fff;
+    height: 250px;
+    top: -60px;
+    z-index: -1;
+}
+
+.cooperation-price {
+    position: relative;
+    width: 1186px;
+    margin: 0 auto;
+    text-align: right;
+    padding-bottom: 120px;
+}
+
+.cooperation-price::after {
+    content: '合作费用';
+    position: absolute;
+    background: #b1d499;
+    padding: 20px 40px;
+    width: 4em;
+    top: -100px;
+    right: 120px;
+}
+
+.price-group {
+    display: inline-block;
+    width: 750px;
+    list-style: none;
+    color: #fff;
+}
+
+.cooperation-price .tips {
+    width: 740px;
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.price-group>.price-item {
+    text-align: left;
+    display: inline-block;
+    width: 32%;
+}
+
+.price-group>.price-item>h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.price-group>.price-item>p {
+    line-height: 1.5;
+}
+
+.price-img {
+    position: absolute;
+    top: -90px;
+}
+
+.price-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 30px;
+    top: 0;
+    bottom: 30px;
+    margin: -30px 0 0 -30px;
+    background: #b1d499;
+    z-index: -1;
+}
+
+.summary {
+    position: relative;
+    height: 369px;
+    background: url('./static/image/summary.png') no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.summary>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+}
+
+strong.yellow {
+    color: #fff000;
+}

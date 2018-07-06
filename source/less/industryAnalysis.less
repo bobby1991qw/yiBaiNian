@@ -1,0 +1,89 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/icons.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+.title-group {
+    text-align: center;
+    color: #333;
+}
+
+.title-group .title {
+    margin: 56px auto 15px;
+}
+
+.title-group .sub-title {
+    position: relative;
+    display: inline-block;
+}
+
+.title-group .sub-title::before,
+.title-group .sub-title::after {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    top: 50%;
+    background: #333;
+}
+
+.title-group .sub-title::before {
+    margin-left: -20px;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.title-group .sub-title::after {
+    margin-right: -20px;
+    right: 0;
+    transform: translate(100%, -50%);
+}    
+
+.graphic-block {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.graphic-block>img {
+    width: 50%;
+    float: left;
+}
+
+.graphic-block.reverse>img {
+    float: right;
+}
+
+.graphic-block>.article {
+    margin-left: 50%;
+}
+
+.graphic-block.reverse>.article {
+    margin-right: 50%;
+    margin-left: 0;
+}
+
+.graphic-block>.article>.desc {
+    position: absolute;
+    line-height: 1.5;
+    top: 50%;         
+    transform: translateY(-50%);
+    width: 590px;    
+    left: 50%;
+    padding-left: 10px;
+}
+
+.graphic-block.reverse>.article>.desc{
+    right: 50%;
+    padding-right: 10px;
+    left: initial;
+}
+
+.bg-blue{
+    background: #86c0cc;
+}
+
+.bg-green{
+    background: #6fa083
+}
