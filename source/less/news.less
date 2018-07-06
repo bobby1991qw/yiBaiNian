@@ -1,0 +1,62 @@
+@import './module/normalize.less';
+@import './module/header.less';
+@import './module/icons.less';
+@import './module/footer.less';
+@import './module/base.less';
+
+.article-wrap {
+    position: relative;
+    width: 1186px;
+    margin: 120px auto 0;
+}
+
+.article {
+    padding: 40px 0;
+}
+
+.article .header {
+    text-align: center;
+}
+
+.article .title {
+    margin: 0 auto 10px;
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+
+.article .date {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.article .content {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.article .content img {
+    margin: 10px 0;
+}
+
+.connect-us-icon {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    margin-left: -100px;
+    -webkit-transform-origin: 55px 50px;
+    transform-origin: 55px 50px;
+    -webkit-animation: ani_index_content 1s infinite alternate;
+    animation: ani_index_content 1s infinite alternate;
+}
+
+.to-top{
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    cursor: pointer;            
+}
+
+.to-top img {
+    width: 30px;
+}

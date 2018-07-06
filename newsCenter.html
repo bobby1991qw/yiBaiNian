@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--强制极速模式渲染-->
+    <meta name="renderer" content="webkit" />
+    <!--控制显示区域各种属性：-->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!--IOS中Safari允许全屏浏览-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <!--IOS中Safari顶端状态条样式：-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <!--忽略将数字变为电话号码：-->
+    <meta content="telephone=no" name="format-detection" />
+    <title>怡百年商学院</title>
+
+    <!--{{css}}-->
+    <link href="static/css/companyProfile.css" rel="stylesheet" />
+    <style>
+        .title-group {
+            text-align: center;
+            color: #333;
+        }
+
+        .title-group .title {
+            margin: 56px auto 15px;
+        }
+
+        .title-group .sub-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-group .sub-title::before,
+        .title-group .sub-title::after {
+            content: '';
+            position: absolute;
+            width: 78px;
+            height: 1px;
+            top: 50%;
+            background: #333;
+        }
+
+        .title-group .sub-title::before {
+            margin-left: -20px;
+            left: 0;
+            transform: translate(-100%, -50%);
+        }
+
+        .title-group .sub-title::after {
+            margin-right: -20px;
+            right: 0;
+            transform: translate(100%, -50%);
+        }
+
+        .news .news-box {
+            padding-top: 40px;
+        }
+
+        .news .news-box a {
+            text-decoration: none;
+        }
+
+        .news .news-box .item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .news .news-box .item img {
+            width: 220px;
+            height: 130px;
+            margin-right: 40px;
+        }
+
+        .news .news-box .item div.date {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .news .news-box .item div.date::before {
+            content: ' ';
+            height: 16px;
+            width: 16px;
+            border: solid 2px #cf1616;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .news .news-box .item div.date span {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .news .news-box .item div.line {
+            width: 55px;
+            margin: 0 10px;
+            border-bottom: dotted 2px #cf1616;
+            height: 10px;
+        }
+
+        .news .news-box .item div.cont {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .news .news-box .item div.cont p.title {
+            color: #333333;
+            font-size: 16px;
+            position: relative;
+            line-height: 18px;
+            padding-bottom: 10px;
+        }
+
+        .news .news-box .item div.cont p.title::after {
+            content: ' ';
+            width: 10%;
+            height: 2px;
+            background: #b3b3b3;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .news .news-box .item div.cont p.desc {
+            color: #b2b2b2;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 10px 0;
+        }
+
+        .news .news-box .item div.cont button {
+            width: 100px;
+            height: 30px;
+            background: #86c0cc;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .news .news-box .item:hover div.cont p.title::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href=".">首页</a>
+        <div>
+            <a href="." class="active">印象怡百年</a>
+            <a href=".">公司简介</a>
+            <a href=".">怡百年商城</a>
+            <a href=".">教学视频</a>
+        </div>
+        <a href=".">服务项目</a>
+        <a href=".">案例展示</a>
+        <a class="logo" href=".">
+            <img src="./static/image/logo.png" alt="">
+        </a>
+        <a href=".">新闻中心</a>
+        <div>
+            <a href=".">合作加盟</a>
+            <a href=".">加入我们</a>
+            <a href=".">行业分析</a>
+        </div>
+        <div>
+            <a href=".">怡百年商学院</a>
+            <a href=".">有害生物防治</a>
+        </div>
+        <a href=".">辐射范围</a>
+    </header>
+    <section>
+        <div class="cont-box banner">
+            <div class="width-box">
+                <img style="margin-top: 130px;" src="./static/image/index-b1-txt.png" alt="">
+                <a href=".">
+                    <img src="./static/image/index-b1-contact.png" alt="" class="content">
+                </a>
+            </div>
+        </div>
+        <div class="news">
+            <div class="cont-box">
+                <div class="width-box">
+                    <div class="title-group">
+                        <h3 class="title">新闻中心</h3>
+                        <p class="sub-title">News</p>
+                    </div>
+                    <div class="news-box">
+                        <a href="javascript:;">
+                            <div class="item">
+                                <img src="./static/image/index-b1-bg.png" alt="">
+                                <div class="date">
+                                    <span>MAY</span>
+                                    <span>31</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="cont">
+                                    <p class="title">第十届中华环境奖启动仪式在北京召开</p>
+                                    <p class="desc">第十届中华环境奖启动仪式在北京召开</p>
+                                    <button>查看详情</button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:;">
+                            <div class="item">
+                                <img src="./static/image/index-b1-bg.png" alt="">
+                                <div class="date">
+                                    <span>MAY</span>
+                                    <span>31</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="cont">
+                                    <p class="title">第十届中华环境奖启动仪式在北京召开</p>
+                                    <p class="desc">第十届中华环境奖启动仪式在北京召开</p>
+                                    <button>查看详情</button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:;">
+                            <div class="item">
+                                <img src="./static/image/index-b1-bg.png" alt="">
+                                <div class="date">
+                                    <span>MAY</span>
+                                    <span>31</span>
+                                </div>
+                                <div class="line"></div>
+                                <div class="cont">
+                                    <p class="title">第十届中华环境奖启动仪式在北京召开</p>
+                                    <p class="desc">第十届中华环境奖启动仪式在北京召开</p>
+                                    <button>查看详情</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="width-box">
+            <div class="friend-link">
+                <div>
+                    <h5>印象怡百年</h5>
+                    <a href="#">关于我们</a>
+                    <a href="#">联系我们</a>
+                </div>
+                <div>
+                    <h5>服务项目</h5>
+                    <a href="#">有害生物防治</a>
+                    <a href="#">清洗服务</a>
+                    <a href="#">防甲醛</a>
+                    <a href="#">加香洁厕</a>
+                </div>
+                <div>
+                    <h5>新闻中心</h5>
+                    <a href="#">最新动态</a>
+                </div>
+                <div>
+                    <h5>案例展示</h5>
+                    <a href="#">案例展示</a>
+                </div>
+                <div>
+                    <h5>合作加盟</h5>
+                    <a href="#">加盟政策</a>
+                </div>
+                <div>
+                    <h5>怡百年商学院</h5>
+                    <a href="#">关于学院</a>
+                </div>
+            </div>
+            <div class="qrCode">
+                <img src="./static/image/qrCode.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!--{{javascript}}-->
+    <script>
+        var _pageConfig = {
+            headerUrlArr: []
+        }
+    </script>
+    <script src="static/js/companyProfile.js"></script>
+</body>
+
+</html>

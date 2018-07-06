@@ -3,3 +3,87 @@
 @import './module/icons.less';
 @import './module/footer.less';
 @import './module/base.less';
+
+.title-group {
+    text-align: center;
+    color: #333;
+}
+
+.title-group .title {
+    margin: 56px auto 15px;
+}
+
+.title-group .sub-title {
+    position: relative;
+    display: inline-block;
+}
+
+.title-group .sub-title::before,
+.title-group .sub-title::after {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    top: 50%;
+    background: #333;
+}
+
+.title-group .sub-title::before {
+    margin-left: -20px;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.title-group .sub-title::after {
+    margin-right: -20px;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.graphic-group {
+    margin-top: 40px;
+}
+
+.graphic-block {
+    width: 1186px;
+    margin: 0 auto 35px;
+    overflow: hidden;
+}
+
+.graphic-block>img {
+    width: 30%;
+    float: left;
+}
+
+.graphic-block.reverse>img {
+    float: right;
+}
+
+.graphic-block>.article {
+    margin-left: 35%;
+}
+
+.graphic-block.reverse>.article {
+    margin-right: 35%;
+    margin-left: 0;
+}
+
+.graphic-block>.article>.title {
+    color: #86c0cc;
+    vertical-align: middle;
+}
+
+.graphic-block>.article>.title::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    margin-right: 10px;
+    background: #86c0cc;
+    vertical-align: middle;
+}
+
+.graphic-block>.article>.desc {
+    line-height: 1.5;
+    color: #b2b2b2;
+}
